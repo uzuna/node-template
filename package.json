@@ -1,0 +1,33 @@
+{
+  "name": "my-template",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha test/*.js",
+    "lint": "eslint --fix src/**/*.js",
+    "flow": "flow check",
+    "demo": "node lib/index.js",
+    "build": "babel src -d lib",
+    "watch": "babel --watch=./src --out-dir=./lib"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.22.2",
+    "babel-eslint": "^6.1.2",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.23.0",
+    "babel-plugin-transform-flow-strip-types": "^6.22.0",
+    "chai": "^3.5.0",
+    "eslint": "^3.15.0",
+    "flow-bin": "^0.39.0",
+    "flow-remove-types": "^1.2.0"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "co": "^4.6.0"
+  }
+}
